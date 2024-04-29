@@ -1,0 +1,31 @@
+.join-to-start-earning-rewards {
+  background-color: var(--green_blueish);
+  padding: 18rem 0rem 18rem 35rem;
+}
+.join-to-start-earning-rewards-title {
+  font-size: 2.2rem;
+  max-width: 15rem;
+  font-weight: 600 !important;
+  padding-bottom: 1.5rem;
+}
+.join-to-start-earning-rewards-text-1 {
+  font-size: 1.3rem;
+  padding-bottom: 2rem;
+}
+.join-to-start-earning-rewards-text-2 {
+  font-size: 1.3rem;
+  padding-top: 1.5rem;
+}
+.join-to-start-earning-rewards-btn {
+  font-size: 1rem;
+  font-weight: 550;
+}
+.join-to-start-earning-rewards-link {
+  color: var(--black);
+}
+.join-to-start-earning-rewards-link:visited {
+  color: var(--black);
+}
+.join-to-start-earning-rewards-link:hover {
+  text-decoration: none;
+}

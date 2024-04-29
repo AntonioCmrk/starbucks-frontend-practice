@@ -1,0 +1,25 @@
+.get-favourites-for-free-selected {
+  background-color: var(--green_blueish);
+}
+.get-favourites-for-free-selected-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  margin: auto;
+  max-width: 800px;
+}
+.get-favourites-for-free-selected-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 300px;
+}
+.get-favourites-for-free-selected-item-title {
+  font-size: 1.5rem;
+  font-family: "sodo-sans-semi-bold";
+  margin-bottom: 1rem;
+}
+.get-favourites-for-free-selected-item-subtext {
+  font-size: 1.1rem;
+}

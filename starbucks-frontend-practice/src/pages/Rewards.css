@@ -1,0 +1,13 @@
+.rewards-title {
+  background-color: var(--dark_green);
+  color: var(--white);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  font-family: "sodo-sans-bold";
+  font-size: 0.9rem;
+}
+.rewards-title-text {
+  max-width: 1200px;
+  margin: auto;
+}

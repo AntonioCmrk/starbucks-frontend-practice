@@ -1,0 +1,33 @@
+.endless-extras {
+  text-align: center;
+}
+
+.endless-extras-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.endless-extras-subsection {
+  max-width: 375px;
+  margin: 2rem;
+  margin-bottom: 10rem;
+}
+
+.endless-extras-title {
+  margin-top: 8rem;
+  font-size: 1.8rem;
+  font-family: "sodo-sans-semi-bold";
+}
+
+.endless-extras-text {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.endless-extras-subsection-text {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}

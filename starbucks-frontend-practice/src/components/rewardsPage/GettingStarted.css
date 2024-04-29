@@ -1,0 +1,29 @@
+.rewards-second-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
+}
+.rewards-second-section-subsections {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0rem 5rem;
+  max-width: 1400px;
+}
+.rewards-second-section-subsection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.green-link {
+  color: var(--green);
+}
+.green-link:hover {
+  text-decoration: none;
+}

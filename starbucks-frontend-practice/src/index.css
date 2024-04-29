@@ -1,0 +1,45 @@
+:root {
+  --dark_green: #1e3932;
+  --green: #00754a;
+  --green_blueish: #d4e9e2;
+  --white_greenish: #f1f8f6;
+  --beige: #f2f0eb;
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #525252;
+  --light_gray: #f9f9f9;
+  --gold: #cba258;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+@font-face {
+  font-family: "sodo-sans-bold";
+  src: local("sodo-sans-bold"),
+    url("./assets/fonts/sodo-sans-bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "sodo-sans-semi-bold";
+  src: local("sodo-sans-semi-bold"),
+    url("./assets/fonts/sodo-sans-semi-bold.ttf") format("truetype");
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-family: "sodo-sans-semi-bold";
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+h3 {
+  font-family: "sodo-sans-semi-bold";
+  font-size: 1.1rem;
+}
+
+.flex {
+  display: flex;
+}
+.col {
+  flex-direction: column;
+}

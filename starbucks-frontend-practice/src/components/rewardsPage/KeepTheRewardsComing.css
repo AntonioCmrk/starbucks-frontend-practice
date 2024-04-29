@@ -1,0 +1,42 @@
+.keep-the-rewards-coming {
+  background-color: var(--green_blueish);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 600px;
+}
+.keep-the-rewards-coming-star-background {
+  width: auto;
+  align-self: center;
+  padding: 12% 8%;
+}
+.keep-the-rewards-coming-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.keep-the-rewards-coming-title {
+  margin-top: 4rem;
+}
+.keep-the-rewards-coming-text {
+  text-align: center;
+  margin: auto;
+  max-width: 800px;
+  font-size: 1.1rem;
+}
+.keep-the-rewards-coming-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.keep-the-rewards-coming-item {
+  max-width: 400px;
+  text-align: center;
+  margin: 2rem 1rem 4rem 1rem;
+  font-size: 1.1rem;
+}
+.keep-the-rewards-coming-btn {
+  margin-bottom: 5rem;
+  font-size: 1rem;
+}

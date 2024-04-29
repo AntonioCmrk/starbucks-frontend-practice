@@ -1,0 +1,24 @@
+.get-favourites-for-free {
+  background-color: var(--white_greenish);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-gold {
+  color: var(--gold);
+}
+
+.text-xs {
+  font-size: 1rem;
+}
+
+.selected-stars {
+  border-bottom: 4px solid var(--green);
+}
+
+.get-favourites-for-free-selector-numbers {
+  font-size: 1.5rem;
+  font-family: "sodo-sans-semi-bold" !important;
+}

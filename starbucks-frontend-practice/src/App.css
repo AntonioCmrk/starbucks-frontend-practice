@@ -1,0 +1,22 @@
+.btn {
+  border-radius: 15px;
+  padding: 0.4rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  border-color: var(--black);
+  border-width: 1px;
+  font-family: "sodo-sans-semi-bold";
+}
+.black-btn {
+  color: var(--white);
+  background-color: var(--black);
+}
+.white-btn {
+  color: var(--black);
+  background-color: var(--white);
+}
+.green-btn {
+  color: var(--white);
+  background-color: var(--green);
+  border: none;
+}

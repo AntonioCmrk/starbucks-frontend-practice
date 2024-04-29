@@ -1,0 +1,51 @@
+.navbar {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: auto;
+  position: relative;
+}
+.navbar-logo {
+  cursor: pointer;
+}
+
+.menu-tabs {
+  list-style-type: none;
+  display: flex;
+  margin: auto;
+  padding: 0;
+  height: 100%;
+  line-height: 5rem;
+}
+.menu-tabs > li {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: "sodo-sans-bold";
+  font-size: 0.87rem;
+  letter-spacing: 0.1rem;
+}
+
+.menu-tabs > li:hover {
+  cursor: pointer;
+  color: var(--green);
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+.navbar-find-a-store {
+  font-family: "sodo-sans-bold";
+  font-size: 0.87rem;
+}
+.navbar-find-a-store:hover {
+  cursor: pointer;
+  color: var(--green);
+}
+.selected {
+  border-bottom: 6px solid var(--green);
+}
