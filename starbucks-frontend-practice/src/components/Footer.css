@@ -1,6 +1,7 @@
 .footer {
   box-shadow: 0 -1px 3px #0000001a, 0 -2px 2px #0000000f, 0 0 2px #00000012;
   padding-bottom: 10rem;
+  padding-left: 2.5rem;
 }
 
 .footer-content {
@@ -103,6 +104,9 @@
   }
 }
 @media (max-width: 1059px) {
+  .footer {
+    padding-left: 1.5rem;
+  }
   .footer-information-1 {
     flex-direction: column;
   }
