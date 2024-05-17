@@ -1,7 +1,20 @@
 import "./JoinToStartEarningRewards.css";
 import Background from "../../assets/images/xl-hero-desktop_2021.webp";
+import { useEffect, useState } from "react";
 
 export const JoinToStartEarningRewards = () => {
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div
       className="join-to-start-earning-rewards"
@@ -21,14 +34,14 @@ export const JoinToStartEarningRewards = () => {
           Join now to start earning Rewards.
         </div>
         <button className="btn green-btn join-to-start-earning-rewards-btn">
-          {window.innerWidth > 768 ? "Join now" : "Join in the app"}
+          {windowWidth > 768 ? "Join now" : "Join in the app"}
         </button>
         <div className="join-to-start-earning-rewards-text-2">
-          {window.innerWidth > 768 ? "Or " : ""}
+          {windowWidth > 768 ? "Or " : ""}
           <a className="join-to-start-earning-rewards-link" href="#">
-            {window.innerWidth > 768 ? "Or join online" : "join in the app"}
+            {windowWidth > 768 ? "Or join online" : "join in the app"}
           </a>{" "}
-          {window.innerWidth > 768 ? "for the best experience" : ""}
+          {windowWidth > 768 ? "for the best experience" : ""}
         </div>
       </div>
     </div>

@@ -1,7 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Footer.css";
 
 export const Footer = () => {
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   const [aboutUsFlag, setAboutUsFlag] = useState<boolean>(false);
   const [careersFlag, setCareersFlag] = useState<boolean>(false);
   const [socialImpactFlag, setSocialImpactFlag] = useState<boolean>(false);
@@ -11,7 +23,7 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-content">
-        {window.innerWidth > 1059 ? (
+        {windowWidth > 1059 ? (
           <div className="footer-information-1">
             <div className="footer-information-1-item">
               <div className="footer-title">About Us</div>

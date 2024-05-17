@@ -6,8 +6,21 @@ import TopLeftStars from "../../assets/images/top-left-stars.svg";
 import BottomRightStars from "../../assets/images/bottom-right-stars.svg";
 import DeltaSkymilesImg from "../../assets/images/delta-skymiles.webp";
 import BankOfAmericaImg from "../../assets/images/bank-of-america.webp";
+import { useEffect, useState } from "react";
 
 export const KeepTheRewardsComing = () => {
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div
       className="background"
@@ -23,7 +36,7 @@ export const KeepTheRewardsComing = () => {
         <div
           className="keep-the-rewards-coming-star-background"
           style={
-            window.innerWidth > 768
+            windowWidth > 768
               ? {
                   alignSelf: "left",
                   backgroundImage: `url(${LeftStars})`,
@@ -79,7 +92,7 @@ export const KeepTheRewardsComing = () => {
         <div
           className="keep-the-rewards-coming-star-background"
           style={
-            window.innerWidth > 768
+            windowWidth > 768
               ? {
                   alignSelf: "right",
                   backgroundImage: `url(${RightStars})`,

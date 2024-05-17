@@ -107,10 +107,8 @@
     flex-direction: column;
   }
   .footer-information-1-item {
-    max-width: 100%;
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0.5rem;
+    margin: 0;
+    min-width: 100%;
   }
   .menu-body ul {
     list-style-type: none;
