@@ -1,51 +1,355 @@
+import { useState } from "react";
 import "./Footer.css";
 
 export const Footer = () => {
+  const [aboutUsFlag, setAboutUsFlag] = useState<boolean>(false);
+  const [careersFlag, setCareersFlag] = useState<boolean>(false);
+  const [socialImpactFlag, setSocialImpactFlag] = useState<boolean>(false);
+  const [forBusinessPartnersFlag, setForBusinessPartnersFlag] =
+    useState<boolean>(false);
+  const [orderAndPickUpFlag, setOrderAndPickUpFlag] = useState<boolean>(false);
   return (
     <div className="footer">
       <div className="footer-content">
-        <div className="footer-information-1">
-          <div className="footer-information-1-item">
-            <div className="footer-title">About Us</div>
-            <div>Our Company</div>
-            <div>Our Coffee</div>
-            <div>Stories and News</div>
-            <div>Starbucks Archive</div>
-            <div>Investor Relations</div>
-            <div>Customer Service</div>
-            <div>Contact Us</div>
+        {window.innerWidth > 1059 ? (
+          <div className="footer-information-1">
+            <div className="footer-information-1-item">
+              <div className="footer-title">About Us</div>
+              <div>Our Company</div>
+              <div>Our Coffee</div>
+              <div>Stories and News</div>
+              <div>Starbucks Archive</div>
+              <div>Investor Relations</div>
+              <div>Customer Service</div>
+              <div>Contact Us</div>
+            </div>
+            <div className="footer-information-1-item">
+              <div className="footer-title">Careers</div>
+              <div>Culture and Values</div>
+              <div>Inclusion, Diversity, and Equity</div>
+              <div>College Achievement Plan</div>
+              <div>Alumni Community</div>
+              <div>U.S. Careers</div>
+              <div>International Careers</div>
+            </div>
+            <div className="footer-information-1-item">
+              <div className="footer-title">Social Impact</div>
+              <div>People</div>
+              <div>Planet</div>
+              <div>Environmental and Social Impact Reporting</div>
+            </div>
+            <div className="footer-information-1-item">
+              <div className="footer-title">For Business Partners</div>
+              <div>Landlord Support Center</div>
+              <div>Suppliers</div>
+              <div>Corporate Gift Card Sales </div>
+              <div>Office and Foodservice Coffee</div>
+            </div>
+            <div className="footer-information-1-item">
+              <div className="footer-title">Order and Pick Up</div>
+              <div>Order on the App</div>
+              <div>Order on the Web</div>
+              <div>Delivery</div>
+              <div>Order and Pick Up Options</div>
+              <div>Explore and Find Coffee for Home</div>
+            </div>
           </div>
-          <div className="footer-information-1-item">
-            <div className="footer-title">Careers</div>
-            <div>Culture and Values</div>
-            <div>Inclusion, Diversity, and Equity</div>
-            <div>College Achievement Plan</div>
-            <div>Alumni Community</div>
-            <div>U.S. Careers</div>
-            <div>International Careers</div>
+        ) : (
+          <div className="footer-information-1">
+            <div className="footer-information-1-item">
+              <h2>
+                <button
+                  className="footer-information-1-item-btn"
+                  onClick={() => setAboutUsFlag((prev) => !prev)}
+                >
+                  <span style={{ fontSize: "0.9rem" }}>About Us</span>
+                  <svg
+                    aria-hidden="true"
+                    className="valign-middle sb-caret-expander__icon ml2 sb-caret-expander--expanded"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24"
+                    style={{
+                      width: "32px",
+                      height: "32px",
+                      overflow: "visible",
+                      fill: "currentcolor",
+                    }}
+                  >
+                    <path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div className={aboutUsFlag ? ` menu-body` : `hidden menu-body`}>
+                <div className="menu-body-information">
+                  <ul>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Our Company
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Our Coffee
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Stories and News
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Starbucks Archive
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Investor Relations
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Customer Service
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Contact Us
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="footer-information-1-item">
+              <h2>
+                <button
+                  className="footer-information-1-item-btn"
+                  onClick={() => setCareersFlag((prev) => !prev)}
+                >
+                  <span style={{ fontSize: "0.9rem" }}>Careers</span>
+                  <svg
+                    aria-hidden="true"
+                    className="valign-middle sb-caret-expander__icon ml2 sb-caret-expander--expanded"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24"
+                    style={{
+                      width: "32px",
+                      height: "32px",
+                      overflow: "visible",
+                      fill: "currentcolor",
+                    }}
+                  >
+                    <path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div className={careersFlag ? ` menu-body` : `hidden menu-body`}>
+                <div className="menu-body-information">
+                  <ul>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Culture and Values
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Inclusion, Diversity, and Equity
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        College Achievement Plan
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Alumni Community
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        U.S. Careers
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        International Careers
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="footer-information-1-item">
+              <h2>
+                <button
+                  className="footer-information-1-item-btn"
+                  onClick={() => setSocialImpactFlag((prev) => !prev)}
+                >
+                  <span style={{ fontSize: "0.9rem" }}>Social Impact</span>
+                  <svg
+                    aria-hidden="true"
+                    className="valign-middle sb-caret-expander__icon ml2 sb-caret-expander--expanded"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24"
+                    style={{
+                      width: "32px",
+                      height: "32px",
+                      overflow: "visible",
+                      fill: "currentcolor",
+                    }}
+                  >
+                    <path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div
+                className={socialImpactFlag ? ` menu-body` : `hidden menu-body`}
+              >
+                <div className="menu-body-information">
+                  <ul>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        People
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Planet
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Environmental and Social Impact Reporting
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="footer-information-1-item">
+              <h2>
+                <button
+                  className="footer-information-1-item-btn"
+                  onClick={() => setForBusinessPartnersFlag((prev) => !prev)}
+                >
+                  <span style={{ fontSize: "0.9rem" }}>
+                    For Business Partners
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    className="valign-middle sb-caret-expander__icon ml2 sb-caret-expander--expanded"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24"
+                    style={{
+                      width: "32px",
+                      height: "32px",
+                      overflow: "visible",
+                      fill: "currentcolor",
+                    }}
+                  >
+                    <path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div
+                className={
+                  forBusinessPartnersFlag ? ` menu-body` : `hidden menu-body`
+                }
+              >
+                <div className="menu-body-information">
+                  <ul>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Landlord Support Center
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Suppliers
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Corporate Gift Card Sales{" "}
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Office and Foodservice Coffee
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="footer-information-1-item">
+              <h2>
+                <button
+                  className="footer-information-1-item-btn"
+                  onClick={() => setOrderAndPickUpFlag((prev) => !prev)}
+                >
+                  <span style={{ fontSize: "0.9rem" }}>Order and Pick Up</span>
+                  <svg
+                    aria-hidden="true"
+                    className="valign-middle sb-caret-expander__icon ml2 sb-caret-expander--expanded"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24"
+                    style={{
+                      width: "32px",
+                      height: "32px",
+                      overflow: "visible",
+                      fill: "currentcolor",
+                    }}
+                  >
+                    <path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div
+                className={
+                  orderAndPickUpFlag ? ` menu-body` : `hidden menu-body`
+                }
+              >
+                <div className="menu-body-information">
+                  <ul>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Order on the App
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Order on the Web
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Delivery
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Order and Pick Up Options
+                      </a>
+                    </li>
+                    <li>
+                      <a className="footer-information-1-links" href="#">
+                        Explore and Find Coffee for Home
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="footer-information-1-item">
-            <div className="footer-title">Social Impact</div>
-            <div>People</div>
-            <div>Planet</div>
-            <div>Environmental and Social Impact Reporting</div>
-          </div>
-          <div className="footer-information-1-item">
-            <div className="footer-title">For Business Partners</div>
-            <div>Landlord Support Center</div>
-            <div>Suppliers</div>
-            <div>Corporate Gift Card Sales </div>
-            <div>Office and Foodservice Coffee</div>
-          </div>
-          <div className="footer-information-1-item">
-            <div className="footer-title">Order and Pick Up</div>
-            <div>Order on the App</div>
-            <div>Order on the Web</div>
-            <div>Delivery</div>
-            <div>Order and Pick Up Options</div>
-            <div>Explore and Find Coffee for Home</div>
-          </div>
-        </div>
+        )}
         <hr />
         <div className="footer-information-2">
           <ul className="footer-information-2-list">

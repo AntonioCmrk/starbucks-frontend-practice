@@ -2,12 +2,15 @@ import "./KeepTheRewardsComing.css";
 import Background from "../../assets/images/keep-rewards-comming-background.webp";
 import LeftStars from "../../assets/images/left-stars.svg";
 import RightStars from "../../assets/images/right-stars.svg";
+import TopLeftStars from "../../assets/images/top-left-stars.svg";
+import BottomRightStars from "../../assets/images/bottom-right-stars.svg";
 import DeltaSkymilesImg from "../../assets/images/delta-skymiles.webp";
 import BankOfAmericaImg from "../../assets/images/bank-of-america.webp";
 
 export const KeepTheRewardsComing = () => {
   return (
     <div
+      className="background"
       style={{
         backgroundImage: `url(${Background})`,
         backgroundRepeat: "no-repeat",
@@ -16,16 +19,28 @@ export const KeepTheRewardsComing = () => {
         padding: "2rem 2rem 2rem 2rem",
       }}
     >
-      <div className="keep-the-rewards-coming ">
+      <div className="keep-the-rewards-coming">
         <div
           className="keep-the-rewards-coming-star-background"
-          style={{
-            backgroundImage: `url(${LeftStars})`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "50%",
-            backgroundSize: "auto 100%",
-          }}
+          style={
+            window.innerWidth > 768
+              ? {
+                  alignSelf: "left",
+                  backgroundImage: `url(${LeftStars})`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "50%",
+                  backgroundSize: "auto 100%",
+                }
+              : {
+                  alignSelf: "left",
+                  backgroundImage: `url(${TopLeftStars})`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "10% 0%",
+                  backgroundSize: "auto 100%",
+                }
+          }
         ></div>
+
         <div className="keep-the-rewards-coming-body">
           <h2 className="keep-the-rewards-coming-title">
             Keep the Rewards Coming
@@ -63,12 +78,23 @@ export const KeepTheRewardsComing = () => {
         </div>
         <div
           className="keep-the-rewards-coming-star-background"
-          style={{
-            backgroundImage: `url(${RightStars})`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "50%",
-            backgroundSize: "auto 100%",
-          }}
+          style={
+            window.innerWidth > 768
+              ? {
+                  alignSelf: "right",
+                  backgroundImage: `url(${RightStars})`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "50%",
+                  backgroundSize: "auto 100%",
+                }
+              : {
+                  alignSelf: "right",
+                  backgroundImage: `url(${BottomRightStars})`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "90% 0%",
+                  backgroundSize: "auto 90%",
+                }
+          }
         ></div>
       </div>
     </div>

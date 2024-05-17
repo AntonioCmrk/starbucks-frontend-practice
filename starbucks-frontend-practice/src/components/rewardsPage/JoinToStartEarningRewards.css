@@ -1,6 +1,11 @@
 .join-to-start-earning-rewards {
   background-color: var(--green_blueish);
-  padding: 18rem 0rem 18rem 35rem;
+  padding-top: 18rem;
+  padding-bottom: 18rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
 }
 .join-to-start-earning-rewards-title {
   font-size: 2.2rem;
@@ -28,4 +33,25 @@
 }
 .join-to-start-earning-rewards-link:hover {
   text-decoration: none;
+}
+@media (max-width: 768px) {
+  .join-to-start-earning-rewards {
+    text-align: center;
+    padding-top: 0rem;
+  }
+  .join-to-start-earning-rewards-title {
+    margin: auto;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    max-width: 200px;
+  }
+  .join-to-start-earning-rewards-text-1 {
+    font-size: 1.3rem;
+  }
+  .join-to-start-earning-rewards-text-2 {
+    font-size: 1.3rem;
+  }
+  .join-to-start-earning-rewards-btn {
+    font-size: 1rem;
+  }
 }

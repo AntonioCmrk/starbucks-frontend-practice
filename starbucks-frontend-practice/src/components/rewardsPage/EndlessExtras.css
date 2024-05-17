@@ -1,5 +1,6 @@
 .endless-extras {
   text-align: center;
+  padding-bottom: 5rem;
 }
 
 .endless-extras-section {
@@ -30,4 +31,20 @@
 .endless-extras-subsection-text {
   font-size: 1.1rem;
   margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .endless-extras-title {
+    margin-top: 5rem;
+  }
+  .endless-extras-section {
+    flex-direction: column;
+  }
+  .endless-extras-subsection {
+    max-width: 100%;
+    margin: 0rem;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 0.8rem;
+  }
 }

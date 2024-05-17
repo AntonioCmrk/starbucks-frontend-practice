@@ -10,6 +10,28 @@
   color: var(--gold);
 }
 
+.menu-tabs-stars {
+  list-style-type: none;
+  display: flex;
+  margin: auto;
+  padding: 0;
+  height: 100%;
+  line-height: 6rem;
+}
+
+.menu-tabs-stars > li {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: "sodo-sans-bold";
+  font-size: 0.87rem;
+  letter-spacing: 0.1rem;
+}
+
+.menu-tabs-stars > li:hover {
+  cursor: pointer;
+  color: var(--green);
+}
+
 .text-xs {
   font-size: 1rem;
 }
@@ -21,4 +43,15 @@
 .get-favourites-for-free-selector-numbers {
   font-size: 1.5rem;
   font-family: "sodo-sans-semi-bold" !important;
+}
+
+@media (max-width: 500px) {
+  .menu-tabs-stars > li {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    height: 20%;
+  }
+  .get-favourites-for-free-selector-numbers {
+    font-size: 0.9rem;
+  }
 }

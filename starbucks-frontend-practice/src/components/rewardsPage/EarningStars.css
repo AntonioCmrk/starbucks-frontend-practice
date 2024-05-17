@@ -43,3 +43,51 @@
   font-family: "sodo-sans-semi-bold";
   margin-bottom: 1rem;
 }
+
+.earning-stars-content-box {
+  display: flex;
+}
+
+@media (max-width: 1400px) {
+  .earning-stars-content {
+    margin-left: 0rem;
+  }
+}
+@media (max-width: 1050px) {
+  .earning-stars-content-section {
+    flex-direction: column;
+  }
+  .earning-stars-content-subsection {
+    padding: 0rem;
+  }
+  .earning-stars-content-section-text {
+    margin-bottom: 2rem;
+  }
+  .earning-stars-content-section-title {
+    font-size: 1.1rem;
+    font-family: "sodo-sans-semi-bold";
+  }
+  .earning-stars-content-section-text {
+    font-size: 1rem;
+  }
+  .earning-stars-content-subsection-title {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 768px) {
+  .earning-stars-content-box {
+    flex-direction: column;
+  }
+  .earning-stars-content-subsection {
+    padding: 1.5rem 0rem;
+  }
+  .earning-stars-content-subsection-item {
+    max-width: 100%;
+  }
+  .earning-stars-content-section {
+    padding: 0rem;
+  }
+  .earning-stars-content {
+    align-items: normal;
+  }
+}

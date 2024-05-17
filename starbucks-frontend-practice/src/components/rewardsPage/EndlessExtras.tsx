@@ -14,14 +14,16 @@ export const EndlessExtras = () => {
       <div className="endless-extras-section">
         <div className="endless-extras-subsection">
           <img src={FunFreebiesImg} alt="FunFreebiesImg" height="120px" />
-          <h3>Fun freebies</h3>
-          <div className="endless-extras-subsection-text">
-            Not only can you earn free coffee, look forward to a birthday treat
-            plus coffee and tea refills.
+          <div style={{ margin: "1rem" }}>
+            <h3>Fun freebies</h3>
+            <div className="endless-extras-subsection-text">
+              Not only can you earn free coffee, look forward to a birthday
+              treat plus coffee and tea refills.
+            </div>
+            <a href="#" className="green-link">
+              Learn more
+            </a>
           </div>
-          <a href="#" className="green-link">
-            Learn more
-          </a>
         </div>
         <div>
           <div className="endless-extras-subsection">
@@ -30,14 +32,16 @@ export const EndlessExtras = () => {
               alt="OrderAndPayAheadImg"
               height="120px"
             />
-            <h3>Order & pay ahead</h3>
-            <div className="endless-extras-subsection-text">
-              Enjoy the convenience of in-store, curbside or drive-thru pickup
-              at select stores.
+            <div style={{ margin: "1rem" }}>
+              <h3>Order & pay ahead</h3>
+              <div className="endless-extras-subsection-text">
+                Enjoy the convenience of in-store, curbside or drive-thru pickup
+                at select stores.
+              </div>
+              <a href="#" className="green-link">
+                Learn more
+              </a>
             </div>
-            <a href="#" className="green-link">
-              Learn more
-            </a>
           </div>
         </div>
         <div className="endless-extras-subsection">
@@ -46,14 +50,16 @@ export const EndlessExtras = () => {
             alt="GetToFreeFasterImg"
             height="120px"
           />
-          <h3>Get to free faster</h3>
-          <div className="endless-extras-subsection-text">
-            Earn Stars even quicker with Bonus Star challenges, Double Star Days
-            and exciting games.
+          <div style={{ margin: "1rem" }}>
+            <h3>Get to free faster</h3>
+            <div className="endless-extras-subsection-text">
+              Earn Stars even quicker with Bonus Star challenges, Double Star
+              Days and exciting games.
+            </div>
+            <a href="#" className="green-link">
+              Learn more
+            </a>
           </div>
-          <a href="#" className="green-link">
-            Learn more
-          </a>
         </div>
       </div>
     </div>

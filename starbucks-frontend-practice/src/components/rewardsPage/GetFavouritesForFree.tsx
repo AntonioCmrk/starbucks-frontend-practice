@@ -11,7 +11,7 @@ export const GetFavouritesForFree = () => {
       <div className="get-favourites-for-free">
         <h2>Get your favorites for free</h2>
         <div className="get-favourites-for-free-selector">
-          <ul className="menu-tabs">
+          <ul className="menu-tabs-stars">
             <li
               className={selectedStars === "25" ? "selected-stars" : ""}
               onClick={() => setSelectedStars("25")}

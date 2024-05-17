@@ -38,3 +38,14 @@
 .questions-gray-section-item-text {
   max-width: 750px;
 }
+@media (max-width: 768px) {
+  .questions-text {
+    font-size: 0.9rem;
+  }
+  .questions-gray-section {
+    padding: 2rem 0.5rem;
+  }
+  .questions-gray-section-item-box {
+    flex-direction: column;
+  }
+}

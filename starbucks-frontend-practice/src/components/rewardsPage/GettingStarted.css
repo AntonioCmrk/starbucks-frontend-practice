@@ -27,3 +27,16 @@
 .green-link:hover {
   text-decoration: none;
 }
+@media (max-width: 900px) {
+  .rewards-second-section-subsections {
+    margin: 0rem 1rem;
+  }
+  .rewards-second-section {
+    padding-top: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .rewards-second-section-subsections {
+    flex-direction: column;
+  }
+}

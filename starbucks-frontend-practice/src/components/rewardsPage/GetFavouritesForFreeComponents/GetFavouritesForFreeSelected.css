@@ -4,7 +4,7 @@
 .get-favourites-for-free-selected-item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   min-height: 300px;
   margin: auto;
   max-width: 800px;
@@ -22,4 +22,17 @@
 }
 .get-favourites-for-free-selected-item-subtext {
   font-size: 1.1rem;
+}
+@media (max-width: 768px) {
+  .get-favourites-for-free-selected-item {
+    flex-direction: column;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+  }
+  .get-favourites-for-free-selected-item-text {
+    text-align: center;
+  }
+  .get-favourites-for-free-selected-item-text {
+    max-width: 500px;
+  }
 }

@@ -40,3 +40,29 @@
   margin-bottom: 5rem;
   font-size: 1rem;
 }
+
+@media (max-width: 768px) {
+  .background {
+    background: none !important;
+    padding: 0rem !important;
+  }
+  .keep-the-rewards-coming {
+    max-height: 100%;
+    flex-direction: column;
+  }
+  .keep-the-rewards-coming-section {
+    flex-direction: column;
+  }
+  .keep-the-rewards-coming-item {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+  .keep-the-rewards-coming-text {
+    font-size: 0.9rem;
+  }
+  .keep-the-rewards-coming-star-background {
+    width: 100%;
+    align-self: center;
+    padding: 12% 0%;
+  }
+}
