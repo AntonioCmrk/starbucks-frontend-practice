@@ -68,8 +68,8 @@
 }
 
 .side-menu {
-  display: none;
   box-shadow: 0 -1px 3px #0000001a, 0 -2px 2px #0000000f, 0 0 2px #00000012;
+  display: none;
 }
 
 .side-menu-tabs {
@@ -86,10 +86,6 @@
   font-family: "sodo-sans-bold";
   font-size: 0.87rem;
   letter-spacing: 0.1rem;
-}
-
-.side-menu {
-  display: none;
 }
 
 @media (max-width: 856px) {
